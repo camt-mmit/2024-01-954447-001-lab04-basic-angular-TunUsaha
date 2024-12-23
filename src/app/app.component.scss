@@ -7,3 +7,15 @@ a {
   a.st-active {
   background-color: silver;
   }
+
+  main {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  main a {
+    margin: 0.5em;
+  }
+  .title {
+    text-align: center;
+  }
