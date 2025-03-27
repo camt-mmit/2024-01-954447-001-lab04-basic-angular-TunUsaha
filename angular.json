@@ -8,7 +8,7 @@
   },
   "newProjectRoot": "projects",
   "projects": {
-    "week04": {
+    "week-04": {
       "projectType": "application",
       "schematics": {
         "@schematics/angular:component": {
@@ -23,7 +23,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:application",
           "options": {
-            "outputPath": "dist/week04",
+            "outputPath": "dist/week-04",
             "index": "src/index.html",
             "browser": "src/main.ts",
             "polyfills": [],
