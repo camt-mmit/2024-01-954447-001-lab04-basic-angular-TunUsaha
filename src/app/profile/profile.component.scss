@@ -1,0 +1,64 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap');
+
+$primary-bg: #f5f5f7;
+$text-color: #1d1d1f;
+$secondary-text: #86868b;
+$button-color: #0071e3;
+$button-hover: #005bb5;
+$font-stack: 'Inter', sans-serif;
+
+body {
+  background-color: $primary-bg;
+  font-family: $font-stack;
+  color: $text-color;
+  text-align: center;
+}
+
+h2,
+h3 {
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+li {
+  font-size: 1.1rem;
+  font-weight: 500;
+  color: $text-color;
+  margin: 5px 0;
+}
+
+p {
+  font-size: 1.1rem;
+  color: $secondary-text;
+  line-height: 1.6;
+}
+
+button {
+  background: $button-color;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-size: 1rem;
+  font-weight: 500;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.3s ease-in-out;
+
+  &:hover {
+    background: $button-hover;
+  }
+}
+
+div {
+  margin-top: 20px;
+
+  a {
+    text-decoration: none;
+    margin: 5px;
+  }
+}

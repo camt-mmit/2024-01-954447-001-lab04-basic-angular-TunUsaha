@@ -1,0 +1,72 @@
+// ใช้ฟอนต์แบบเรียบหรู
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+
+$primary-color: #f5f5f7; // สีพื้นหลังโทน Apple
+$text-color: #1d1d1f; // สีข้อความ
+$secondary-color: #a1a1a6; // สีข้อความรอง
+$font-stack: 'Inter', sans-serif;
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: $font-stack;
+  background-color: $primary-color;
+  color: $text-color;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+app-root {
+  width: 100%;
+  max-width: 800px;
+  text-align: center;
+  padding: 2rem;
+}
+
+h1,
+h2,
+h3 {
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+
+p {
+  font-size: 1.1rem;
+  color: $secondary-color;
+  line-height: 1.6;
+}
+
+// ปุ่มสไตล์ minimal แบบ Apple
+button {
+  background: #0071e3;
+  color: white;
+  border: none;
+  padding: 12px 24px;
+  font-size: 1rem;
+  font-weight: 500;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+
+  &:hover {
+    background: #005bb5;
+  }
+}
+
+// เพิ่ม Animation เล็กน้อยให้ดู Smooth
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+app-root {
+  animation: fadeIn 0.6s ease-out;
+}
